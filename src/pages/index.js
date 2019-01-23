@@ -8,14 +8,20 @@ import SEO from '../components/seo'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className='home-container'>
+      <p>Olá pessoas curiosas,</p>
+      <p style={{ "max-width": 600, "margin": "0 auto" }}>
+        Ainda não temos muito para mostrar neste site.
+        <br />
+        Mas vamos ter, daqui a uns tempos.
+      </p> <br />
+      <p>
+        Carolina e Manuel
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/flufwgYxpsk?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  </Layout >
 )
 
 export default IndexPage

@@ -197,6 +197,8 @@ html {
   box-sizing: inherit;
 }
 body {
+  background-image: url('../images/bg.gif');
+  background-size: cover;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
@@ -617,4 +619,11 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+.home-container {
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px #DDD;
+  padding: 1rem 2rem;
 }
