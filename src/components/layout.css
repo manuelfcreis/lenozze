@@ -197,8 +197,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-image: url('../images/bg.gif');
+  background: url('../images/bg.jpg') center;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;

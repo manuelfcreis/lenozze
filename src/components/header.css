@@ -1,0 +1,18 @@
+nav > ul {
+  padding-top: 1.5rem;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+nav > ul > li {
+  margin: 0.5rem;
+  display: inline;
+  color: white;
+  cursor: pointer;
+  transform: all 0.3s ease;
+}
+
+nav > ul > li:hover {
+  opacity: 0.7;
+}

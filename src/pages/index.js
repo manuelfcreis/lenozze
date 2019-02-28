@@ -1,25 +1,68 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className='home-container'>
-      <p>Olá pessoas curiosas,</p>
-      <p style={{ "max-width": 600, "margin": "0 auto" }}>
-        Ainda não temos muito para mostrar neste site.
+    <div id='home-container'>
+      <div id='main-title'>
+        <h1>Carolina e Manuel</h1>
         <br />
-        Mas vamos ter, daqui a uns tempos.
-      </p> <br />
-      <p>
-        Carolina e Manuel
-      </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/flufwgYxpsk?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
+        <p>21 09 2019</p>
+      </div>
+
+      <div className='card-container'>
+        <div className='card' id='oDia'>
+          <h3>
+            o dia
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras pretium at nulla egestas consequat. Donec faucibus vel urna quis aliquam.
+            Quisque faucibus dui mi, at gravida odio suscipit nec. Cras a rutrum ex.
+            Sed volutpat est ac vulputate dignissim. Nullam nec orci nisl.
+            Praesent blandit egestas augue, vitae ultricies nisl sodales in.
+            Integer volutpat felis nulla, pharetra vehicula est facilisis vitae.
+            Phasellus aliquam dapibus porttitor. Morbi lacinia malesuada vestibulum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non sapien libero.
+            Sed varius neque eu eros viverra lobortis. Etiam vitae felis justo.
+          </p>
+        </div>
+        <div className='card' id='lista'>
+          <h3>
+            lista
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras pretium at nulla egestas consequat. Donec faucibus vel urna quis aliquam.
+            Quisque faucibus dui mi, at gravida odio suscipit nec. Cras a rutrum ex.
+            Sed volutpat est ac vulputate dignissim. Nullam nec orci nisl.
+            Praesent blandit egestas augue, vitae ultricies nisl sodales in.
+            Integer volutpat felis nulla, pharetra vehicula est facilisis vitae.
+            Phasellus aliquam dapibus porttitor. Morbi lacinia malesuada vestibulum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non sapien libero.
+            Sed varius neque eu eros viverra lobortis. Etiam vitae felis justo.
+          </p>
+        </div>
+        <div className='card' id='contactos'>
+          <h3>
+            contactos
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras pretium at nulla egestas consequat. Donec faucibus vel urna quis aliquam.
+            Quisque faucibus dui mi, at gravida odio suscipit nec. Cras a rutrum ex.
+            Sed volutpat est ac vulputate dignissim. Nullam nec orci nisl.
+            Praesent blandit egestas augue, vitae ultricies nisl sodales in.
+            Integer volutpat felis nulla, pharetra vehicula est facilisis vitae.
+            Phasellus aliquam dapibus porttitor. Morbi lacinia malesuada vestibulum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non sapien libero.
+            Sed varius neque eu eros viverra lobortis. Etiam vitae felis justo.
+          </p>
+        </div>
+      </div>
     </div>
   </Layout >
 )

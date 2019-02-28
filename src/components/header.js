@@ -1,39 +1,21 @@
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        'text-align': 'center',
-        'text-shadow': '0px 0px 1px #000'
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div >
+const Header = (props) => (
+  <nav>
+    <ul>
+      <li onClick={props.oDia}>o dia</li>
+      <li onClick={props.lista}>lista</li>
+      <li onClick={props.contactos}>contactos</li>
+    </ul>
+  </nav>
 )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  oDia: PropTypes.func,
+  lista: PropTypes.func,
+  contactos: PropTypes.func
 }
 
 Header.defaultProps = {
