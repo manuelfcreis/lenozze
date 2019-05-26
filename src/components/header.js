@@ -3,8 +3,13 @@ import React from 'react'
 
 const Header = (props) => (
   <nav>
+    <div id='main-title'>
+      <h1 onClick={props.clearTabs}>Carolina e Manuel</h1>
+      <br />
+      <p>21.09.2019</p>
+    </div>
     <ul>
-      <li onClick={props.oDia}>o dia</li>
+      <li onClick={props.casamento}>casamento</li>
       <li onClick={props.lista}>lista</li>
       <li onClick={props.contactos}>contactos</li>
     </ul>
@@ -13,9 +18,10 @@ const Header = (props) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-  oDia: PropTypes.func,
+  casamento: PropTypes.func,
   lista: PropTypes.func,
-  contactos: PropTypes.func
+  contactos: PropTypes.func,
+  clearTabs: PropTypes.func
 }
 
 Header.defaultProps = {

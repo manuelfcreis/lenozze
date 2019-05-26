@@ -1,0 +1,25 @@
+.list-item {
+  display: inline-flex;
+  margin: 0.5rem;
+  transform: all 0.3s ease;
+}
+
+.list-image {
+  height: 100px;
+  width: 150px;
+}
+
+.list-text {
+  font-family: 'Optima', 'Comfortaa', sans-serif;
+  color: black;
+  margin-left: 1rem;
+  max-width: 300px;
+}
+
+.list-item-container {
+  padding-top: 1.5rem;
+  margin: 0;
+  display: block;
+  list-style: none;
+}
+

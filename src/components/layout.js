@@ -7,6 +7,7 @@ import './layout.css'
 import './card.css'
 import './header.css'
 import './home.css'
+import './list_item.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -23,9 +24,10 @@ const Layout = ({ children }) => (
       <>
         <Header
           siteTitle={data.site.siteMetadata.title}
-          oDia={clickElement.bind(this, 'oDia')}
+          casamento={clickElement.bind(this, 'casamento')}
           lista={clickElement.bind(this, 'lista')}
           contactos={clickElement.bind(this, 'contactos')}
+          clearTabs={clickElement.bind(this, 'all')}
         />
         <div
           style={{
@@ -49,11 +51,15 @@ const hideAllCards = () => {
 }
 
 const clickElement = (query) => {
-  if (document.getElementById(query).classList.contains('card-show')) {
+  if (query === 'all') {
     hideAllCards()
   } else {
-    hideAllCards()
-    document.getElementById(query).classList.add('card-show')
+    if (document.getElementById(query).classList.contains('card-show')) {
+      hideAllCards()
+    } else {
+      hideAllCards()
+      document.getElementById(query).classList.add('card-show')
+    }
   }
 }
 
