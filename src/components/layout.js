@@ -8,6 +8,7 @@ import './card.css'
 import './header.css'
 import './home.css'
 import './list_item.css'
+import './lista.css'
 
 const Layout = ({ children }) => (
   <StaticQuery

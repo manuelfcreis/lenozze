@@ -1,19 +1,32 @@
 .list-item {
-  display: inline-flex;
+  display: block;
+  position: relative;
   margin: 0.5rem;
   transform: all 0.3s ease;
+  text-align: center;
 }
 
 .list-image {
-  height: 100px;
-  width: 150px;
+  height: auto;
+  max-width: 100%;
+  max-height: 400px;
+  margin: 0 auto;
 }
 
 .list-text {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  display: none;
   font-family: 'Optima', 'Comfortaa', sans-serif;
   color: black;
-  margin-left: 1rem;
-  max-width: 300px;
+  width: 100%;
+  color: rgba(255,255,255,0.7);
+  background-color: rgba(0,0,0,0.5);
+}
+
+.list-item:hover .list-text {
+  display: block;
 }
 
 .list-item-container {

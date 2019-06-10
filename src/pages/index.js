@@ -1,57 +1,12 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import ListItem from '../components/list_item'
+import Lista from '../components/lista'
 import SEO from '../components/seo'
 import Img from 'gatsby-image';
 import { graphql } from "gatsby"
 
-const list = [
-  ['A bichinha gosta mesmo deste serviço', 'imagemUm'],
-  ['E gosta ainda mais deste candeeiro', 'imagemDois'],
-  ['E nem vamos falar desta maquinazinha', 'imagemTres'],
-]
-
-export const query = graphql`
-  query {
-    nois: file(relativePath: { eq: "nois.jpeg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imagemUm: file(relativePath: { eq: "lista/1.jpeg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imagemDois: file(relativePath: { eq: "lista/2.jpeg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imagemTres: file(relativePath: { eq: "lista/3.jpeg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imagemQuatro: file(relativePath: { eq: "lista/4.jpeg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
-
+const nois = require('../images/nois.jpeg')
 
 const IndexPage = (props) => (
   <Layout>
@@ -66,7 +21,7 @@ const IndexPage = (props) => (
             O casamento vai ser no dia 21 de setembro de 2019 na Quinta da Torre em Arcos, Vila do Conde.
             A missa começará às 15h30. A festa também será na quinta.
           </p>
-          <Img fluid={props.data.nois.childImageSharp.fluid} alt='nós' />
+          <img src={nois} alt='nós' />
           <br />
           <p>
             R. Eng. Francisco Costa Reis 249
@@ -80,24 +35,7 @@ const IndexPage = (props) => (
             </a>
           </p>
         </div>
-        <div className='card' id='lista'>
-          <h3>
-            lista
-          </h3>
-          <ul className='list-item-container'>
-            {list.map((item) => {
-              console.log(props.data)
-              return (
-                <li>
-                  <ListItem
-                    image={props.data[item[1]].childImageSharp.fluid}
-                    text={item[0]}
-                  />
-                </li>
-              )
-            })}
-          </ul>
-        </div>
+        <Lista />
         <div className='card' id='contactos'>
           <h3>
             contactos
