@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import ListItem from './list_item'
+import list from '../list'
 
 class Lista extends React.Component {
   render() {
@@ -15,16 +16,6 @@ class Lista extends React.Component {
       autoplaySpeed: 5000,
     };
 
-    const list = [
-      ['Serviço', require('../images/lista/servico.png'), (<p>Test</p>)],
-      ['Faqueiro', require('../images/lista/faqueiro.jpg'), 'cutipol'],
-      ['Copos', require('../images/lista/copos.jpg'), 'cutipol'],
-      ['Copos Cocktail', require('../images/lista/cocktail.jpg'), (<p>Test <strong>2</strong></p>)],
-      ['Kitchen Aid', require('../images/lista/kitchen.jpg'), 'payment'],
-      ['Blender', require('../images/lista/blender.jpg'), 'payment'],
-      ['Food Processor', require('../images/lista/processor.jpg'), 'payment'],
-    ]
-    
     return (
       <div className='card' id='lista'>
         <h3>

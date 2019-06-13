@@ -47,7 +47,6 @@ class PresentForm extends React.Component {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot='campo-enganador'
-          netlify
           // onSubmit={this.formSubmit}
         >
           <p style={{display: 'none'}}>

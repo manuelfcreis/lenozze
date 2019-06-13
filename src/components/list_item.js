@@ -79,7 +79,7 @@ class ListItem extends React.Component {
               </ol>
             </div> :
             <div>
-              <p> {this.props.description} </p>
+              <div> {this.props.description} </div>
               <PresentForm 
               present={this.props.text}
               />

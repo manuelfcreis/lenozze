@@ -4,6 +4,8 @@ import Layout from '../components/layout'
 import Lista from '../components/lista'
 import SEO from '../components/seo'
 
+import list from '../list';
+
 const nois = require('../images/nois.jpeg')
 
 const IndexPage = (props) => (
@@ -51,6 +53,22 @@ const IndexPage = (props) => (
           </p>
         </div>
       </div>
+    </div>
+    <div className='form-container' hidden>
+      {list.map((item, index) => {
+        return(
+          <form key={index} name={item[0]} data-netlify='true' data-netlify-honeypot="campo-enganador" hidden>
+            <p style={{display: 'none'}}>
+              <label><input name="campo-enganador" /></label>
+            </p>
+            <input type="hidden" name="form-name" value={item[0]} />
+            <input type="text" name="name" />
+            <input type="text" name="present" />
+            <textarea name="message"></textarea>
+          </form>
+        )
+      })}
+    
     </div>
   </Layout>
 )
