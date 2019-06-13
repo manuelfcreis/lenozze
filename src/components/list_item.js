@@ -66,7 +66,10 @@ class ListItem extends React.Component {
             <div> 
               <p>Este presente está em lista na <strong>Cutipol</strong>. <br /></p>
               <p>Pode ser oferecido na loja ou acedendo ao&nbsp;
-                <a href='http://cutipol.pt/listas/listas.php' target='_blank'>
+                <a href='http://cutipol.pt/listas/listas.php' 
+                  target='_blank'
+                  rel="noopener noreferrer"
+                >
                 website
                 </a>
               <br />usando os seguintes dados:</p>
