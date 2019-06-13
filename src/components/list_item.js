@@ -61,11 +61,26 @@ class ListItem extends React.Component {
           ariaHideApp={false}
         >
           <h2>{this.props.text}</h2>
-          <p> Descrição de como dar o presente </p>
 
-          <PresentForm 
-            present={this.props.text}
-          />
+          {this.props.description === 'cutipol' ?
+            <div> 
+              <p>Este presente está em lista na <strong>Cutipol</strong>. <br /></p>
+              <p>Pode ser oferecido na loja ou acedendo ao&nbsp;
+                <a href='http://cutipol.pt/listas/listas.php' target='_blank'>
+                website
+                </a>
+              <br />usando os seguintes dados:</p>
+              <ol>
+                <li>Username: <em>cbmcrc</em></li>
+                <li>Password: <em>210919</em></li>
+              </ol>
+            </div> :
+            <div>
+              <p> {this.props.description} </p>
+              <PresentForm 
+              present={this.props.text}
+              />
+            </div>}
         </Modal>
       </>
     )

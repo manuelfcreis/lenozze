@@ -20,21 +20,7 @@ class PresentForm extends React.Component {
     this.setState({[value]: event.target.value})
   }
 
-  formSubmit(event) {
-    event.preventDefault();
-
-    const data = {
-      "values": [
-        [
-          this.state.name,
-          this.state.present,
-          this.state.message
-        ]
-      ]
-    }
-
-    console.log(data)
-
+  formSubmit(_event) {
     this.setState({submitted: true})
   }
 
@@ -49,7 +35,16 @@ class PresentForm extends React.Component {
       )
     } else {
       return(
-        <form onSubmit={this.formSubmit}>
+        <form onSubmit={this.formSubmit} 
+          remote='true'
+          netlify-honeypot='campo-enganador'
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+            <p style='display: none'>
+              <label><input name="campo-enganador" /></label>
+            </p>
           <label className='form-field'>
             Nome:
             <input 

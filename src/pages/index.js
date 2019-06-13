@@ -3,8 +3,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import Lista from '../components/lista'
 import SEO from '../components/seo'
-import Img from 'gatsby-image';
-import { graphql } from "gatsby"
 
 const nois = require('../images/nois.jpeg')
 

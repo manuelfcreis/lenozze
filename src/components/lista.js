@@ -16,13 +16,13 @@ class Lista extends React.Component {
     };
 
     const list = [
-      ['Serviço', require('../images/lista/servico.png')],
-      ['Faqueiro', require('../images/lista/faqueiro.jpg')],
-      ['Copos', require('../images/lista/copos.jpg')],
-      ['Copos Cocktail', require('../images/lista/cocktail.jpg')],
-      ['Kitchen Aid', require('../images/lista/kitchen.jpg')],
-      ['Blender', require('../images/lista/blender.jpg')],
-      ['Food Processor', require('../images/lista/processor.jpg')],
+      ['Serviço', require('../images/lista/servico.png'), (<p>Test</p>)],
+      ['Faqueiro', require('../images/lista/faqueiro.jpg'), 'cutipol'],
+      ['Copos', require('../images/lista/copos.jpg'), 'cutipol'],
+      ['Copos Cocktail', require('../images/lista/cocktail.jpg'), (<p>Test <strong>2</strong></p>)],
+      ['Kitchen Aid', require('../images/lista/kitchen.jpg'), 'payment'],
+      ['Blender', require('../images/lista/blender.jpg'), 'payment'],
+      ['Food Processor', require('../images/lista/processor.jpg'), 'payment'],
     ]
     
     return (
@@ -38,8 +38,9 @@ class Lista extends React.Component {
               return (
                 <ListItem
                   key={index}
-                  image={item[1]}
                   text={item[0]}
+                  image={item[1]}
+                  description={item[2]}
                 />
               )
             })}
