@@ -35,8 +35,7 @@ class PresentForm extends React.Component {
       )
     } else {
       return(
-        <form onSubmit={this.formSubmit} 
-          remote='true'
+        <form
           name="contact"
           method="POST"
           data-netlify="true"
