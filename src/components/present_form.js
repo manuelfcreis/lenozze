@@ -13,7 +13,7 @@ class PresentForm extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.formSubmit = this.formSubmit.bind(this);
+    // this.formSubmit = this.formSubmit.bind(this);
   }
 
   handleChange(value, event) {
