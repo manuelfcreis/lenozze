@@ -37,10 +37,11 @@ class PresentForm extends React.Component {
       return(
         <form onSubmit={this.formSubmit} 
           remote='true'
-          netlify-honeypot='campo-enganador'
           name="contact"
           method="POST"
           data-netlify="true"
+          data-netlify-honeypot='campo-enganador'
+          netlify
         >
           <p style={{display: 'none'}}>
             <label><input name="campo-enganador" /></label>
