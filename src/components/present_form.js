@@ -42,9 +42,9 @@ class PresentForm extends React.Component {
           method="POST"
           data-netlify="true"
         >
-            <p style='display: none'>
-              <label><input name="campo-enganador" /></label>
-            </p>
+          <p style={{display: 'none'}}>
+            <label><input name="campo-enganador" /></label>
+          </p>
           <label className='form-field'>
             Nome:
             <input 
