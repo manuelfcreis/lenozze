@@ -29,7 +29,7 @@ class PresentForm extends React.Component {
   //     present: this.state.present,
   //     message: this.state.message
   //   }    
-  }
+  // }
 
   render() {
     if (this.state.submitted) {
