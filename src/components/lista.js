@@ -12,8 +12,6 @@ class Lista extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: false,
-      autoplay: true,
-      autoplaySpeed: 5000,
     };
 
     return (

@@ -13,23 +13,16 @@ class PresentForm extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    // this.formSubmit = this.formSubmit.bind(this);
+    this.formSubmit = this.formSubmit.bind(this);
   }
 
   handleChange(value, event) {
     this.setState({[value]: event.target.value})
   }
 
-  // formSubmit(event) {
-  //   event.preventDefault();
-  //   this.setState({ submitted: true });
-
-  //   const data = {
-  //     name: this.state.name,
-  //     present: this.state.present,
-  //     message: this.state.message
-  //   }    
-  // }
+  formSubmit(event) {
+    this.setState({ submitted: true });
+  }
 
   render() {
     if (this.state.submitted) {
@@ -45,9 +38,10 @@ class PresentForm extends React.Component {
         <form
           name={this.props.present}
           method="POST"
+          action='#'
           data-netlify="true"
           data-netlify-honeypot='campo-enganador'
-          // onSubmit={this.formSubmit}
+          onSubmit={this.formSubmit}
         >
           <p style={{display: 'none'}}>
             <label><input name="campo-enganador" /></label>
