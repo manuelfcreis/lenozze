@@ -4,28 +4,30 @@
   justify-content: center;
   position: relative;
   transform: all 0.3s ease;
-  height: 400px;
 }
 
 .list-image {
   height: auto;
   margin: 0 auto;
+  width: 481px;
+  max-height: 400px;
+  cursor: pointer;
+}
+
+.list-image:hover {
+  opacity: 0.9;
 }
 
 .list-text {
   position: absolute;
   bottom: 0px;
   text-align: center;
-  display: none;
   font-family: 'Optima', 'Comfortaa', sans-serif;
   color: black;
   width: 100%;
+  margin: 0 auto;
   color: rgba(255,255,255,0.7);
   background-color: rgba(0,0,0,0.5);
-}
-
-.list-item:hover .list-text {
-  display: block;
 }
 
 .list-item-container {

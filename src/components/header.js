@@ -6,7 +6,7 @@ const Header = (props) => (
     <div id='main-title'>
       <h1 onClick={props.clearTabs}>Carolina e Manuel</h1>
       <br />
-      <p>21.09.2019</p>
+      <p>21<span id='dot'>.</span>09<span id='dot'>.</span>2019</p>
     </div>
     <ul>
       <li onClick={props.casamento}>casamento</li>

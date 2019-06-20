@@ -12,10 +12,16 @@ class PresentForm extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   handleChange(value, event) {
     this.setState({[value]: event.target.value})
+  }
+
+  handleClose(event) {
+    event.preventDefault();
+    this.props.closeModal();
   }
 
   render() {
@@ -55,14 +61,21 @@ class PresentForm extends React.Component {
         <label className='form-field'>
           Mensagem:
           <textarea 
-            rows='10'
+            rows='3'
             className='form-input'
             name='message'
             onChange={this.handleChange.bind(this, 'message')}
             value={this.state.message}
           />
         </label>
-        <input className='form-submit' type="submit" value="Submit" />
+        <button className='form-submit' type="submit">Enviar</button>
+        <button 
+          className='form-submit'
+          type="reset"
+          onClick={this.handleClose}
+        >
+          Fechar
+        </button>
       </form>
     )
   }
