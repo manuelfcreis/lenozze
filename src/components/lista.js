@@ -20,7 +20,8 @@ class Lista extends React.Component {
           lista
         </h3>
         <p>
-          Texto descritivo
+          Deixamos uma lista de presentes para a casa e lua-de-mel.
+          Para oferecer, basta escolher o presente e seguir as indicações. Obrigado!
         </p>
         <Slider {...settings}>
           {list.map((item, index) => {

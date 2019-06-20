@@ -11,7 +11,8 @@ const customStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
+    maxHeight             : '80vh',
   }
 };
 
@@ -79,9 +80,21 @@ class ListItem extends React.Component {
               </ol>
             </div> :
             <div>
-              <div> {this.props.description} </div>
+              <div>
+                <p>
+                  Presente escolhido. Obrigado! <br />
+                  Para oferecer ou contribuir para este presente, transferir o montante desejado para:
+                </p>
+                <p>
+                  <strong>Nome:</strong> <br />
+                  <strong>NIB:</strong>
+                </p>
+                <p>
+                  Também podem nos enviar uma mensagem a detalhar o que nos deram! 
+                </p>
+              </div>
               <PresentForm 
-              present={this.props.text}
+                present={this.props.text}
               />
             </div>}
         </Modal>
