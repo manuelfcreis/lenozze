@@ -4,9 +4,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
-import './card.css'
 import './header.css'
-import './home.css'
+import './index.css'
 import './list_item.css'
 import './lista.css'
 
