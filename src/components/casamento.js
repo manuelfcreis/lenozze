@@ -23,7 +23,7 @@ const Casamento = () => {
       <a
           target='_blank' rel="noopener noreferrer"
           href='https://goo.gl/maps/YGeUWViPSouwS59G9'>
-          Ligação para google maps
+          Mapa
       </a>
       </p>
     </div>

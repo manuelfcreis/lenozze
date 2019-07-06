@@ -50,14 +50,14 @@ class ListItem extends React.Component {
     return(
       <div> 
         <p>Este presente está na lista de casamento na <strong>Cutipol</strong>. <br /></p>
-        <p> Pode ser oferecido directamente na loja ou no site:&nbsp;
+        <p> Pode ser oferecido directamente na loja ou no &nbsp;
           <a href='http://cutipol.pt/listas/listas.php' 
             target='_blank'
             rel="noopener noreferrer"
           >
-          website
+            site:
           </a>
-        <br />usando os seguintes dados:</p>
+        </p>
         <ol>
           <li>Username: <em>cbmcrc</em></li>
           <li>Password: <em>210919</em></li>
@@ -78,11 +78,11 @@ class ListItem extends React.Component {
             Para oferecer ou contribuir para este presente, transferir o montante desejado para:
           </p>
           <p>
-            <strong>Nome: Manuel Costa Reis</strong> <br />
-            <strong>NIB:</strong>
+            <strong>Nome:</strong> Manuel Costa Reis<br />
+            <strong>IBAN:</strong> PT50 0010 0000 5228 5020 0018 1
           </p>
           <p>
-          Indique abaixo o que nos oferece para podermos agradecer!
+          Indique abaixo o que oferece para podermos agradecer!
           </p>
         </div>
         <PresentForm 
