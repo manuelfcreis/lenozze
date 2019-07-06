@@ -17,7 +17,7 @@
 }
 
 #main-title > h1 {
-  font-family: 'Optima', 'Comfortaa', sans-serif;
+  font-family: 'Crimson Text', serif;
   font-weight: 500;
   margin-right: 14px;
   cursor: pointer;
@@ -43,7 +43,7 @@ nav > ul > li {
   margin: 0.5rem;
   display: inline;
   color: white;
-  font-family: 'Optima', 'Comfortaa', sans-serif;
+  font-family: 'Crimson Text', serif;
   cursor: pointer;
   transform: all 0.3s ease;
 }
