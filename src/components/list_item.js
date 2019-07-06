@@ -49,8 +49,8 @@ class ListItem extends React.Component {
   renderCutipol() {
     return(
       <div> 
-        <p>Este presente está em lista na <strong>Cutipol</strong>. <br /></p>
-        <p>Pode ser oferecido na loja ou acedendo ao&nbsp;
+        <p>Este presente está na lista de casamento na <strong>Cutipol</strong>. <br /></p>
+        <p> Pode ser oferecido directamente na loja ou no site:&nbsp;
           <a href='http://cutipol.pt/listas/listas.php' 
             target='_blank'
             rel="noopener noreferrer"
@@ -71,7 +71,6 @@ class ListItem extends React.Component {
       <div>
         <div>
           <p>
-            Presente escolhido!<br />
             {parseInt(this.props.description) > 0 && 
               this.props.text + ' - €' + this.props.description}
           </p>
@@ -79,11 +78,11 @@ class ListItem extends React.Component {
             Para oferecer ou contribuir para este presente, transferir o montante desejado para:
           </p>
           <p>
-            <strong>Nome:</strong> <br />
+            <strong>Nome: Manuel Costa Reis</strong> <br />
             <strong>NIB:</strong>
           </p>
           <p>
-            Deixe abaixo uma mensagem para podermos agradecer!
+          Indique abaixo o que nos oferece para podermos agradecer!
           </p>
         </div>
         <PresentForm 

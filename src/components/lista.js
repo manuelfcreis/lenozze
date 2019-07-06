@@ -21,7 +21,7 @@ class Lista extends React.Component {
         </h3>
         <p>
           Deixamos uma lista de presentes para a casa e lua-de-mel.
-          Para oferecer, basta escolher o presente e seguir as indicações. Obrigado!
+          Para oferecer um presente, basta carregar nas imagens abaixo. Obrigado!
         </p>
         <Slider {...settings}>
           {list.map((item, index) => {
