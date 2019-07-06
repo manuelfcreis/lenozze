@@ -17,10 +17,12 @@
 }
 
 #main-title > h1 {
+  text-transform: uppercase;
   font-family: 'Crimson Text', serif;
   font-weight: 500;
-  margin-right: 14px;
+  margin-right: 1.25rem;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 #main-title > h1:hover {
