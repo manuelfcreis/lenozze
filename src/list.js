@@ -4,12 +4,12 @@ const list = [
   ['faqueiro', require('./images/lista/faqueiro.png'), 'cutipol'],
   ['copos', require('./images/lista/copos.jpg'), 'cutipol'],
   ['copos cocktail', require('./images/lista/cocktail.png'), 360], // 15€ copo, 4 copos conjunto, 6 conjuntos
+  ['6 cadeiras de jantar', require('./images/lista/cadeiras.png'), 900] // 150 * 6
+  ['candeeiro de tecto', require('./images/lista/candeeiro.png'), 682], // flos 480
   ['batedeira ', require('./images/lista/kitchen.png'), 'oferecido'],
   ['liquidificadora', require('./images/lista/blender.png'), 150],
   ['processador de comida', require('./images/lista/processor.png'), 150],
   ['robô aspirador', require('./images/lista/robot.jpg'), 220],
-  ['candeeiro de tecto', require('./images/lista/candeeiro.png'), 682], // flos 480
-  ['cadeiras', require('./images/lista/cadeiras.png'), null]
 ]
   
 export default list
