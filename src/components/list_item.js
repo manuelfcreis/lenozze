@@ -37,16 +37,20 @@ class ListItem extends React.Component {
     this.setState({modalIsOpen: true});
   }
 
-  componentDidMount() {
-    window.history.pushState('forward', null, './#modal');
-
-    window.addEventListener('popstate', (event) => {
-      if (this.state.modalIsOpen) {
-        event.preventDefault();
-        this.closeModal();
-        window.removeEventListener('popstate', () => {});
-      }
-    })
+  componentDidUpdate() {
+    if (this.state.modalIsOpen) {
+      window.history.pushState('forward', null, './#modal');
+  
+      window.addEventListener('popstate', (event) => {
+        if (this.state.modalIsOpen) {
+          event.preventDefault();
+          this.closeModal();
+          window.removeEventListener('popstate', () => {});
+        }
+      })
+    } else {
+      window.history.pushState('forward', null, './');
+    }
   }
 
   afterOpenModal() {
