@@ -1,6 +1,6 @@
 const list = [
   ['viagem ao japão', require('./images/lista/japao.jpg'), null],
-  ['serviço', require('./images/lista/servico.jpeg'), null],
+  ['serviço', require('./images/lista/servico.png'), null],
   ['faqueiro', require('./images/lista/faqueiro.png'), 'cutipol'],
   ['copos', require('./images/lista/copos.jpg'), 'cutipol'],
   ['copos cocktail', require('./images/lista/cocktail.png'), 360], // 15€ copo, 4 copos conjunto, 6 conjuntos
