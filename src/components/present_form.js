@@ -9,6 +9,7 @@ class PresentForm extends React.Component {
       name: '',
       present: this.props.present,
       message: '',
+      email: '',
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -38,26 +39,38 @@ class PresentForm extends React.Component {
           <label><input name="campo-enganador" /></label>
         </p>
         <input type="hidden" name="form-name" value={this.props.present} />
+        <div className='form-group'>
+          <label className='form-field'>
+            Nome:
+            <input 
+              className='form-input'
+              type='text'
+              name='name'
+              onChange={this.handleChange.bind(this, 'name')}
+              value={this.state.name}
+            />
+          </label>
+          <label className='form-field'>
+            Presente:
+            <input
+              type='text'
+              name='present'
+              className='form-input'
+              disabled
+              value={this.state.present}
+            />
+          </label>
+        </div>
         <label className='form-field'>
-          Nome:
-          <input 
-            className='form-input'
-            type='text'
-            name='name'
-            onChange={this.handleChange.bind(this, 'name')}
-            value={this.state.name}
-          />
-        </label>
-        <label className='form-field'>
-          Presente:
-          <input
-            type='text'
-            name='present'
-            className='form-input'
-            disabled
-            value={this.state.present}
-          />
-        </label>
+            Email:
+            <input
+              type='email'
+              name='email'
+              className='form-input'
+              onChange={this.handleChange.bind(this, 'email')}
+              value={this.state.email}
+            />
+          </label>
         <label className='form-field'>
           Mensagem:
           <textarea 

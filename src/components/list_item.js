@@ -37,6 +37,18 @@ class ListItem extends React.Component {
     this.setState({modalIsOpen: true});
   }
 
+  componentDidMount() {
+    window.history.pushState('forward', null, './#modal');
+
+    window.addEventListener('popstate', (event) => {
+      if (this.state.modalIsOpen) {
+        event.preventDefault();
+        this.closeModal();
+        window.removeEventListener('popstate', () => {});
+      }
+    })
+  }
+
   afterOpenModal() {
     // references are now sync'd and can be accessed.
     // this.subtitle.style.color = '#f00';

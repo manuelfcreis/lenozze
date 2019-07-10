@@ -55,6 +55,7 @@ class IndexPage extends React.Component {
                 <input type="hidden" name="form-name" value={item[0]} />
                 <input type="text" name="name" />
                 <input type="text" name="present" />
+                <input type="email" name="email" />
                 <textarea name="message"></textarea>
               </form>
             )
