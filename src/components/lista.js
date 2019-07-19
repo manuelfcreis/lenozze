@@ -21,7 +21,7 @@ class Lista extends React.Component {
         </h3>
         <p>
         Temos uma lista de presentes para a casa e lua-de-mel.
-        Uma parte da lista de casamento encontra-se também nas lojas da Cutipol.
+        Uma parte da lista de casamento encontra-se também nas lojas da Cutipol. <br />
         Para oferecer um presente, basta escolher a imagem. Obrigado!
         </p>
         <Slider {...settings}>
