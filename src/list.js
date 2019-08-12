@@ -7,10 +7,10 @@ const list = [
   ['6 cadeiras de jantar', require('./images/lista/cadeiras.png'), 900], // 150 * 6
   ['candeeiro de tecto', require('./images/lista/candeeiro.png'), 480], // flos 480
   ['candeeiros de mesa', require('./images/lista/candeeiros.png'), 160], // flos 480
-  ['robô aspirador', require('./images/lista/robot.jpg'), 220],
+  ['robô aspirador', require('./images/lista/robot.jpg'), 'oferecido'],
   ['batedeira ', require('./images/lista/kitchen.png'), 'oferecido'],
   ['liquidificadora', require('./images/lista/blender.png'), 150],
   ['processador de comida', require('./images/lista/processor.png'), 150],
 ]
-  
+
 export default list
