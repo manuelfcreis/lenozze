@@ -40,7 +40,7 @@ class ListItem extends React.Component {
   componentDidUpdate() {
     if (this.state.modalIsOpen) {
       window.history.pushState('forward', null, './#modal');
-  
+
       window.addEventListener('popstate', (event) => {
         if (this.state.modalIsOpen) {
           event.preventDefault();
@@ -64,15 +64,13 @@ class ListItem extends React.Component {
 
   renderCutipol() {
     return(
-      <div> 
+      <div>
         <p>Este presente está na lista de casamento na <strong>Cutipol</strong>. <br /></p>
-        <p> Pode ser oferecido directamente na loja ou no &nbsp;
-          <a href='http://cutipol.pt/listas/listas.php' 
+        <p> Pode ser oferecido directamente na loja ou no&nbsp;
+          <a href='http://cutipol.pt/listas/listas.php'
             target='_blank'
             rel="noopener noreferrer"
-          >
-            site:
-          </a>
+          >site:</a>
         </p>
         <ol>
           <li>Username: <em>cbmcrc</em></li>
@@ -87,7 +85,7 @@ class ListItem extends React.Component {
       <div>
         <div>
           <p>
-            {parseInt(this.props.description) > 0 && 
+            {parseInt(this.props.description) > 0 &&
               this.props.text + ' - €' + this.props.description}
           </p>
           <p>
@@ -101,7 +99,7 @@ class ListItem extends React.Component {
           Indique abaixo o que oferece para podermos agradecer!
           </p>
         </div>
-        <PresentForm 
+        <PresentForm
           present={this.props.text}
           closeModal={this.closeModal}
         />
