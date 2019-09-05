@@ -9,7 +9,7 @@ const list = [
   ['candeeiros de mesa', require('./images/lista/candeeiros.png'), 'oferecido'], // flos 480
   ['robô aspirador', require('./images/lista/robot.jpg'), 'oferecido'],
   ['batedeira ', require('./images/lista/kitchen.png'), 'oferecido'],
-  ['liquidificadora', require('./images/lista/blender.png'), 150],
+  ['liquidificadora', require('./images/lista/blender.png'), 'oferecido'],
   ['processador de comida', require('./images/lista/processor.png'), 'oferecido'],
 ]
 
